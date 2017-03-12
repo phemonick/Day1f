@@ -1,0 +1,12 @@
+{
+  "name": "Day1a",
+  "version": "1.0.0",
+  "description": "",
+  "main": "DataT.js",
+  "scripts": {
+    "test": "jasmine DataT_spec.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

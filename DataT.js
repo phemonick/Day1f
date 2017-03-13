@@ -20,7 +20,7 @@ else if (inpu<100){
 	return 'less than 100' ;
 
 }
-else if (inpu>100){
+else if ((inpu>100)){
 		return 'more than 100'
 	}
 else if (inpu==100){
@@ -29,18 +29,23 @@ else if (inpu==100){
 	}
 
 
-
-/*
-else if (){
-
-	return inpu;
+else if (typeof(inpu)=='object'){
+	var s='undefined';
+	if (inpu.length>1){
+		var s=inpu[2];
+}else{
+	inpu=[];
+	s='undefined'
 }
-else if (){
-
-	return inpu;
-}*/
+return s;
 }
-console.log(dataTypes(''));
+
+else {
+
+	return 'called callback';
+}
+}
+console.log(dataTypes(44));
 module.exports = {
 	dataTypes: dataTypes
 }

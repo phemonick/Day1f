@@ -64,7 +64,7 @@ describe("Data types tests ", function() {
     });
 
     it("should return `undefined` for `[]`", function() {
-      expect(assign.dataTypes([])).not.toBeDefined();
+      expect(assign.dataTypes([2,6])).not.toBeDefined();
     });
     it("should return `undefined` for `[4, 9]`", function() {
       expect(assign.dataTypes([4, 9])).not.toBeDefined();

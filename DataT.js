@@ -1,16 +1,17 @@
-function dataType(inpu){
+function dataTypes(inpu){
 
-	if (){
+	if (( inpu == null) && ( inpu==undefined)){
 
 	return "no value";
 
 }
-else if(){
+
+else if(inpu==true || inpu==false){
 
 	return inpu ;
 }
 
-else if (){
+/*else if (){
 
 	return val ;
 }
@@ -27,9 +28,9 @@ else if (){
 else if (){
 
 	return inpu;
+}*/
 }
-}
-
+console.log(dataTypes(false));
 module.exports = {
-	dataType : dataType
+	dataTypes: dataTypes
 }

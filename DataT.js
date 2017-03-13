@@ -11,11 +11,19 @@ else if(inpu==true || inpu==false){
 	return inpu ;
 }
 
-/*else if (){
+else if (inpu<100){
 
-	return val ;
+	return 'less than 100' ;
+
 }
+else if (inpu>100){
+		return 'more than 100'
+	}
+else if (inpu==100){
 
+		return 'equal to 100'
+	}
+/*
 else if (){
 
 	return len;
@@ -30,7 +38,7 @@ else if (){
 	return inpu;
 }*/
 }
-console.log(dataTypes(false));
+console.log(dataTypes(10));
 module.exports = {
 	dataTypes: dataTypes
 }
